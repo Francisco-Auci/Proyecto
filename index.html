@@ -6,6 +6,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="En Formula Xtreme vas a encontrar todo lo que necesitas saber sobre la tempora de Formula 1">
       <meta name="keywords" content=" Formual 1, Campeonato de constructors, Campeonato de Pilotos, Semana d carrera">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <link rel="stylesheet" href="./css/style.css">
       <title>Formula Xtreme</title>
    </head>
@@ -13,17 +15,25 @@
       <header>
          <nav>
                <div class="logo">Formula Xtreme</div>
+               <label for="btn" class="icon">
+                  <span class="fa fa-bars"></span>
+               </label>
+               <input type="checkbox" id="btn">
                <ul>
                   <li><a href="">Home</a></li>
                   <li>
-                     <a href="">About</a>
+                     <label for="btn-1" class="show">About +</label>     
+                     <a href="">About</a>  
+                     <input type="checkbox" id="btn-1">
                      <ul>
                         <li><a href="">News</a></li>
                         <li><a href="">Wallpaper</a></li>
                      </ul>
                   </li>
                   <li>
-                     <a href="">Racing</a>
+                     <label for="btn-2" class="show">Racing +</label>
+                     <a href="">Racing</a> 
+                     <input type="checkbox" id="btn-2">
                      <ul>
                         <li><a href="">Season</a></li>
                         <li><a href="">Teams</a></li>
@@ -56,6 +66,11 @@
             </div>
          </section>-->
       </main>
+      <script>
+         $('.icon').click(function(){
+           $('span').toggleClass("cancel");
+         });
+      </script>
       <footer>
       
       </footer> 
