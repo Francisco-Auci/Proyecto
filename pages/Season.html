@@ -1,224 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <p class="logo-F1"><a class="pages" href="../index.html">Formula Xtreme</a></p>
-            <ul class="cont-ul">
-                <li class="develop">
-                About
-                    <ul class="ul-second">
-                        <li><a class="pages" href="./News.html">News</a></li>
-                        <li><a class="pages" href="./Wallpapers.html">Wallpapers</a></li>
-                    </ul>
-                </li>
-                <li class="develop">
-                Racing
-                    <ul class="ul-second">
-                        <li><a class="pages" href="./Season.html">Season</a></li>
-                        <li><a class="pages" href="./Teams.html">Teams</a></li>
-                    </ul>
-                </li>
-                <li><a class="pages" href="./store.html">Store</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <div class="season">
-                <div class="pilotos">      <p>Campeonato de Pilotos</p>
-                    <table>
-                        <tr>
-                            <th>Posicion</th>
-                            <th>Piloto</th>
-                            <th>Puntos</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Max Verstappen</td>
-                            <td>195</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Segio Perez</td>
-                            <td>148</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Fernado Alonso</td>
-                            <td>131</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Lewis Hamilton</td>
-                            <td>106</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Carlos Sainz</td>
-                            <td>82</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Charles Leclerc</td>
-                            <td>72</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>George Russell</td>
-                            <td>72</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Lance Stroll</td>
-                            <td>44</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>Esteban ocon</td>
-                            <td>31</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>Lando Norris</td>
-                            <td>24</td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>Pierre Gasly</td>
-                            <td>16</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>Nico Hülkenberg</td>
-                            <td>9</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td>Alexander Albon</td>
-                            <td>7</td>
-                        </tr>
-                        <tr>
-                            <td>14</td>
-                            <td>Oscar Piastri</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>15</td>
-                            <td>Valtteri Bottas</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>16</td>
-                            <td>Zhou Guanyu</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>17</td>
-                            <td>Yuki Tsunoda</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>18</td>
-                            <td>Kevin Magnussen</td>
-                            <td>2</td>    
-                        </tr>
-                        <tr>
-                            <td>19</td>
-                            <td>Logan Sargeant</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>20</td>
-                            <td>Nyck de Vries</td>
-                            <td>0</td>
-                            </tr>
-                    </table>    
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="En Formula Xtreme vas a encontrar todo lo que necesitas saber sobre la tempora de Formula 1">
+      <meta name="keywords" content=" Formual 1, Campeonato de constructors, Campeonato de Pilotos, Semana d carrera">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="../css/style.css">
+      <title>Formula Xtreme</title>
+   </head>
+   <body>
+      <header>
+         <nav>
+               <div class="logo">Formula Xtreme</div>
+               <label for="btn" class="icon">
+                  <span class="fa fa-bars"></span>
+               </label>
+               <input type="checkbox" id="btn">
+               <ul>
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li>
+                     <label for="btn-1" class="show">Info. +</label>     
+                     <a href="">Informacion</a>  
+                     <input type="checkbox" id="btn-1">
+                     <ul>
+                        <li><a href="./News.html">Noticias</a></li>
+                        <li><a href="./Wallpapers.html">Wallpapers</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <label for="btn-2" class="show">Temporada +</label>
+                     <a href="">Temporada</a> 
+                     <input type="checkbox" id="btn-2">
+                     <ul>
+                        <li><a href="./Season.html">Campeonatos</a></li>
+                        <li><a href="./Teams.html">Equipos</a></li>
+                     </ul>
+                     <li><a href="./store.html">Tiendas</a></li>
+                  </li>
+               </ul>
+         </nav>
+      </header>
+      <main>    
+       
+      </main>
+      <footer>
+         <div class="content">
+            <div class="left box">
+              <div class="upper">
+                <div class="topic">Nosotros</div>
+                <p>Descubre el mundo de la Fórmula Uno con Formula Xtreme: Noticias actualizadas, análisis y cobertura completa de las carreras.</p>
+              </div>
+              <div class="lower">
+                <div class="topic">Contactanos</div>
+                <div class="phone">
+                  <a href="#"><i class="fas fa-phone-volume"></i>+54 011 9089 6767</a>
                 </div>
-                <div class="constructores">
-                    <p> Campionato de constructores</p>
-                    <table> 
-                        <tr>
-                            <th>Posicion</th>
-                            <th>Piloto</th>
-                            <th>Puntos</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>RedBull Racing</td>
-                            <td>377</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Mercedes</td>
-                            <td>178</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Aston Martin</td>
-                            <td>175</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Ferrari</td>
-                            <td>154</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Alpine</td>
-                            <td>47</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>McLaren</td>
-                            <td>29</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Haas</td>
-                            <td>11</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>alfa Romeo</td>
-                            <td>9</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>Williams</td>
-                            <td>7</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>AlphaTauri</td>
-                            <td>2</td>
-                        </tr>
-                    </table>
+                <div class="email">
+                  <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
                 </div>
-                <div class="pista">
-                        <img src="../img/trazado hungria.png" alt="trazado de hungria">
-                    </div>
-                <div class="datos">
-                <div class="horarios"></div>
-                <div class="datos-pista"></div>
-                </div>
+              </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <a href="">instagram</a>
-        <a href="">twitter</a>
-        <a href="">facebook</a>
-    </footer> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</body>
+            <div class="middle box">
+              <div class="topic">Informacion</div>
+              <div><a href="./pages/News.html">Noticias</a></div>
+              <div><a href="./pages/Wallpapers.html">Wallpapers</a></div>
+              <div><a href="./pages/Season.html">Campeonatos</a></div>
+              <div><a href="./pages/Teams.html">Equipos</a></div>
+            </div>
+            <div class="right box">
+              <div class="topic">Seguinos</div>
+              <form action="#">
+                <input type="text" placeholder="Enter email address">
+                <input type="submit" name="" value="Send">
+                <div class="media-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Copyright © 2023 <a href="#">Formula Xtreme</a> Todos los derechos reservados.</p>
+          </div>
+      </footer> 
+      <script>
+         $('.icon').click(function(){
+           $('span').toggleClass("cancel");
+         });
+      </script>
+   </body>
 </html>

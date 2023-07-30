@@ -1,132 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-       <nav>
-            <p class="logo-F1"><a class="pages" href="../index.html">Formula Xtreme</a></p>
-            <ul class="cont-ul">
-                <li class="develop">
-                About
-                    <ul class="ul-second">
-                        <li><a class="pages" href="./News.html">News</a></li>
-                        <li><a class="pages" href="./Wallpapers.html">Wallpapers</a></li>
-                    </ul>
-                </li>
-                <li class="develop">
-                Racing
-                    <ul class="ul-second">
-                        <li><a class="pages" href="./Season.html">Season</a></li>
-                        <li><a class="pages" href="./Teams.html">Teams</a></li>
-                    </ul>
-                </li>
-                <li><a class="pages" href="./store.html">Store</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>  
-        <h1>Wallpapers</h1>
-        <h2>RedBull Racing</h2>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/wallpaper red bull.jpg" class="d-block w-100" alt="RedBull">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="En Formula Xtreme vas a encontrar todo lo que necesitas saber sobre la tempora de Formula 1">
+      <meta name="keywords" content=" Formual 1, Campeonato de constructors, Campeonato de Pilotos, Semana d carrera">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="../css/style.css">
+      <title>Formula Xtreme</title>
+   </head>
+   <body>
+      <header>
+         <nav>
+               <div class="logo">Formula Xtreme</div>
+               <label for="btn" class="icon">
+                  <span class="fa fa-bars"></span>
+               </label>
+               <input type="checkbox" id="btn">
+               <ul>
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li>
+                     <label for="btn-1" class="show">Info. +</label>     
+                     <a href="">Informacion</a>  
+                     <input type="checkbox" id="btn-1">
+                     <ul>
+                        <li><a href="./News.html">Noticias</a></li>
+                        <li><a href="./Wallpapers.html">Wallpapers</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <label for="btn-2" class="show">Temporada +</label>
+                     <a href="">Temporada</a> 
+                     <input type="checkbox" id="btn-2">
+                     <ul>
+                        <li><a href="./Season.html">Campeonatos</a></li>
+                        <li><a href="./Teams.html">Equipos</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="./store.html">Tiendas</a></li>
+               </ul>
+         </nav>
+      </header>
+      <main>    
+       
+      </main>
+      <footer>
+         <div class="content">
+            <div class="left box">
+              <div class="upper">
+                <div class="topic">Nosotros</div>
+                <p>Descubre el mundo de la Fórmula Uno con Formula Xtreme: Noticias actualizadas, análisis y cobertura completa de las carreras.</p>
+              </div>
+              <div class="lower">
+                <div class="topic">Contactanos</div>
+                <div class="phone">
+                  <a href="#"><i class="fas fa-phone-volume"></i>+54 011 9089 6767</a>
                 </div>
-                <div class="carousel-item">
-                    <img src="../img/wallpaper red bull 2.jpg" class="d-block w-100" alt="RedBull">
+                <div class="email">
+                  <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
                 </div>
-                <div class="carousel-item">
-                    <img src="../img/wallpaper red bull 4.jpg" class="d-block w-100" alt="RedBull">
-                </div>
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> 
-        <h2>Aston Martin F1</h2>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/wallpaper aston martin.jpg" class="d-block w-100" alt="Aston Martin">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/wallpaper aston martin 2.jpg" class="d-block w-100" alt="Aston Martin">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/wallpaper aston martin 3.jpg" class="d-block w-100" alt="Aston Martin">
-                </div>
+            <div class="middle box">
+              <div class="topic">Informacion</div>
+              <div><a href="./pages/News.html">Noticias</a></div>
+              <div><a href="./pages/Wallpapers.html">Wallpapers</a></div>
+              <div><a href="./pages/Season.html">Campeonatos</a></div>
+              <div><a href="./pages/Teams.html">Equipos</a></div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <h2>Scuderia Ferrari</h2>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/wallpaper ferrari.jpg" class="d-block w-100" alt="Ferrari">
+            <div class="right box">
+              <div class="topic">Seguinos</div>
+              <form action="#">
+                <input type="text" placeholder="Enter email address">
+                <input type="submit" name="" value="Send">
+                <div class="media-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="carousel-item">
-                    <img src="../img/wallpaper ferrari 2.jpg" class="d-block w-100" alt="Ferrari">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/wallpaper ferrari 3.jpg" class="d-block w-100" alt="Ferrari">
-                </div>
+              </form>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <h2>Mercedes Benz AMG F1</h2>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/wallpaper mercedes.jpg" class="d-block w-100" alt="Mercedes">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/wallpaper mercedes 2.jpg" class="d-block w-100" alt="Mercedes">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/wallpaper mercedes 3.jpg" class="d-block w-100" alt="Mercedes">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> 
-    </main>
-    <footer>
-        <a href="">instagram</a>
-        <a href="">twitter</a>
-        <a href="">facebook</a>
-    </footer>   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+          </div>
+          <div class="bottom">
+            <p>Copyright © 2023 <a href="#">Formula Xtreme</a> Todos los derechos reservados.</p>
+          </div>
+      </footer> 
+      <script>
+         $('.icon').click(function(){
+           $('span').toggleClass("cancel");
+         });
+      </script>
+   </body>
 </html>
