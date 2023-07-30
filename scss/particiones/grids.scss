@@ -1,0 +1,53 @@
+.inicio {  
+    display: grid;
+    grid-template-columns: 0.9fr 2.1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "raceweek circuito" "ubicacion circuito" "info circuito";
+  }
+  
+.raceweek { 
+    grid-area: raceweek; 
+    font-size: 50px;
+    background-color: #ff0000;
+}
+  
+.ubicacion {
+     grid-area: ubicacion; 
+}
+
+.ubi{
+    width: 400px;
+    height: 300px;
+}
+
+.info { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "tiempo hora";
+    grid-area: info;
+  }
+  
+.tiempo {
+     grid-area: tiempo; 
+     font-size: 20px;
+    }
+  
+.hora { 
+    grid-area: hora;
+    font-size: 20px;
+ }
+  
+.circuito {
+     grid-area: circuito;
+}
+
+.circuito-{ 
+    width: 1503px;
+    height: 870px ;
+}
