@@ -202,6 +202,59 @@ section {
     max-width: 700px;
     margin: 40px 0; } }
 
+.wallpappers {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb2f06; }
+
+.slider {
+  position: relative;
+  width: 60%;
+  overflow: hidden; }
+
+.images {
+  display: flex;
+  width: 100%; }
+
+.images img {
+  height: 400px;
+  width: 100%;
+  transition: all 0.15s ease; }
+
+.images input {
+  display: none; }
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px; }
+
+.dots label {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid fff 3px;
+  cursor: pointer;
+  transition: all 0.15 ease;
+  margin: 5px; }
+
+.dots label:hover {
+  background: fff; }
+
+#wiliams1:checked ~ .m1 {
+  margin-left: 0; }
+
+#wiliams2:checked ~ .m2 {
+  margin-left: -100%; }
+
+#wiliams3:checked ~ .m3 {
+  margin-left: -200%; }
+
+#wiliams4:checked ~ .m4 {
+  margin-left: -300%; }
+
 html {
   height: 100%; }
 
