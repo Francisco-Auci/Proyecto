@@ -1,11 +1,11 @@
-main{
+section{
     height: 100%;
-place-items: center;
+    place-items: center;
     display: grid;
     background: #f2f2f2;
     text-align: center;
 }    
-.container{
+.container-1{
     margin: 40px;
     padding: 0 40px;
     display: flex;
@@ -15,7 +15,7 @@ place-items: center;
   
 .card{
     margin: 40px 0;
-    height: 280px;
+    height: 300px;
     max-width: 350px;
     margin: 0 20px;
     background: white;
