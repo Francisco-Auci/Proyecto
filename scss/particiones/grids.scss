@@ -21,7 +21,46 @@ margin: 50px;
 	}
 }
 
-img{
+.hass{
 	width: 150px;
 	height: 150px;
 }
+
+.season {  display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  "PRX-RACE"
+	  "CAMP";
+  }
+  
+  .PRX-RACE {  display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  "CIRCUITO DATOS";
+	grid-area: PRX-RACE;
+  }
+  
+  .CIRCUITO { grid-area: CIRCUITO; }
+  
+  .DATOS { grid-area: DATOS; }
+  
+  .CAMP {  display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  "PILOTOS CONTRUCTORES";
+	grid-area: CAMP;
+  }
+  
+  .PILOTOS { grid-area: PILOTOS; }
+  
+  .CONTRUCTORES { grid-area: CONTRUCTORES; }
+  

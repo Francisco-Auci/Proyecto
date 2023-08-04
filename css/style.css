@@ -132,11 +132,49 @@ nav ul ul li a {
   .parent {
     grid-template-columns: repeat(1, 1fr); } }
 
-img {
+.hass {
   width: 150px;
   height: 150px; }
 
-section {
+.season {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "PRX-RACE" "CAMP"; }
+
+.PRX-RACE {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "CIRCUITO DATOS";
+  grid-area: PRX-RACE; }
+
+.CIRCUITO {
+  grid-area: CIRCUITO; }
+
+.DATOS {
+  grid-area: DATOS; }
+
+.CAMP {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "PILOTOS CONTRUCTORES";
+  grid-area: CAMP; }
+
+.PILOTOS {
+  grid-area: PILOTOS; }
+
+.CONTRUCTORES {
+  grid-area: CONTRUCTORES; }
+
+.News {
   height: 100%;
   place-items: center;
   display: grid;
@@ -218,7 +256,7 @@ section {
   transform: scale(0.9); }
 
 @media screen and (max-width: 978px) {
-  .container {
+  .container-1 {
     flex-wrap: wrap;
     flex-direction: column; }
   .card {
