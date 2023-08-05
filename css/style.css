@@ -223,6 +223,7 @@ table {
 
 .ubicacion {
   grid-area: ubicacion;
+  width: 100%;
   height: 350px; }
 
 .ubi {
@@ -256,6 +257,28 @@ table {
 .circuito- {
   width: 100%;
   height: 900px; }
+
+@media (max-width: 768px) {
+  .inicio {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "raceweek" "ubicacion" "info" "circuito";
+    height: auto; }
+  .info {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "tiempo" "hora"; }
+  .tiempo,
+  .hora {
+    height: auto;
+    font-size: auto; }
+  .ubicacion,
+  .circuito {
+    height: auto; }
+  .ubi,
+  .circuito- {
+    width: 100%;
+    height: auto; } }
 
 .News {
   height: 100%;
