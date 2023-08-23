@@ -1,0 +1,200 @@
+.page_title {
+	margin: 50px;
+	font-size: 50px;
+	text-align: center;
+}
+  
+.parent {
+	margin-top: 20px;
+	margin-left: 100px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+  
+	@media (max-width: 768px) {
+	  grid-template-columns: repeat(2, 1fr);
+	}
+  
+	@media (max-width: 480px) {
+	  grid-template-columns: repeat(1, 1fr);
+	}
+}
+  
+.hass {
+	width: 150px;
+	height: 150px;
+}
+  
+.inicio {
+	display: grid;
+	grid-template-columns: 0.9fr 2.1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-auto-columns: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  "raceweek circuito"
+	  "ubicacion circuito"
+	  "info circuito";
+	height: 900px;
+  
+	.raceweek {
+	  grid-area: raceweek;
+	  font-size: 50px;
+	  background-color: #eb2f06;
+	  width: 100%;
+	}
+	
+	.semana{
+		margin-top: 25px;
+		text-align: center;
+	}
+
+	.ubicacion {
+	  grid-area: ubicacion;
+	  width: 100%;
+	  height: 350px;
+	}
+  
+	.ubi {
+	  width: 100%;
+	  height: 350px;
+	}
+  
+	.info {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  grid-template-rows: 1fr;
+	  gap: 0px 0px;
+	  grid-auto-flow: row;
+	  grid-template-areas:
+		"tiempo hora";
+	  grid-area: info;
+	  height: 200px;
+  
+	  .tiempo {
+		grid-area: tiempo;
+		font-size: 20px;
+		height: 200px;
+	  }
+  
+	  .hora {
+		grid-area: hora;
+		font-size: 20px;
+		height: 200px;
+	  }
+	}
+  
+	.circuito {
+	  grid-area: circuito;
+	  height: 900px;
+	}
+  
+	.circuito- {
+	  width: 100%;
+	  height: 900px;
+	}
+  
+	@media (max-width: 768px) {
+	  grid-template-columns: 1fr;
+	  grid-template-rows: auto;
+	  grid-template-areas:
+		"raceweek"
+		"ubicacion"
+		"info"
+		"circuito";
+	  height: auto;
+  
+	  .info {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas:
+		  "tiempo"
+		  "hora";
+	  }
+  
+	  .tiempo,
+	  .hora {
+		height: auto;
+		font-size: auto;
+	  }
+  
+	  .ubicacion,
+	  .circuito {
+		height: auto;
+	  }
+  
+	  .ubi,
+	  .circuito- {
+		width: 100%;
+		height: auto;
+	  }
+	}
+  }
+
+  .container5 { 
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.8fr 1.2fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  "circuito datos"
+	  "pilotos costructores";
+  }
+  
+.circuito3 {
+	grid-area: circuito; 
+	height: auto;
+}
+  
+  .datos { grid-area: datos; }
+  
+  .pilotos { grid-area: pilotos; }
+  
+  .costructores { grid-area: costructores; }
+
+  .temporada{
+	margin: 25px;
+	font-size: 30px;
+	font-weight: 100;
+  }
+
+.camp{
+	text-align: center;
+}
+    
+.figura {
+	margin-top: 100px;
+	width: 100%;
+	background-color: #0000004f;
+}
+  
+  table {
+	margin-left: 20px;
+	width: 100%;
+		tr {
+	  	height: 40px;
+		}
+		th {
+	  	text-align: left;
+		}
+}
+
+  @media (max-width: 768px) {
+  .container5 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "circuito"
+      "datos"
+      "pilotos"
+      "costructores";
+  }
+
+  .pilotos,
+  .costructores {
+    margin-top: 20px;
+  }
+}
